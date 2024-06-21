@@ -7,7 +7,7 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"> </script>
-    <link href='kamera.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Deteksi Gestur Tangan</title>
     <style>
@@ -25,7 +25,7 @@
   <body style="background-color: #E8F6FF; font-family:Poppins;">
     <nav class="navbar navbar-light bg-white navbar-expand-lg">
         <a class="navbar-brand" href="/">
-            <img src="https://th.bing.com/th?q=Logo+Halal+Baru+PNG&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-ID&cc=ID&setlang=en&adlt=strict&t=1&mw=247" alt="Logo" width="50" height="50">
+            <img src="{{ url_for('static', filename='images/logos.png') }}" alt="Logo" width="50" height="50">
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto ml-5">
@@ -36,10 +36,7 @@
                     <a class="nav-link text-primary" href="/detect"><b>Detect</b></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link text-dark" href="/about"><b>About</b></a>
-                </li>
-                <li class="nav-item mx-3">
-                    <a class="nav-link text-dark" href="/contact"><b>Contact</b></a>
+                    <a class="nav-link text-dark" href="#about"><b>About</b></a>
                 </li>
             </ul>
         </div>
